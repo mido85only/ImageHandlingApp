@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Cover : Identifiable{
+    var id: Int
+    var coverName: String
+    var thumbnail: String{
+        return "thumb-" + coverName
+    }
+}
